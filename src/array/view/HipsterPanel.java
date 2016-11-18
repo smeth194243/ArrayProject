@@ -53,7 +53,17 @@ public class HipsterPanel extends JPanel
 				String selectedText = baseController.getHipsters()[dropDown.getSelectedIndex()].toString();
 				wordsLabel.setText(selectedText);
 			}
-		});	
+		});
+		
+		myButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				baseController.impactHipsters();
+				wordsLabel.setText(baseController.getHipsters()[dropDown.getSelectedIndex()].toString);
+				repaint();
+			}
+		});
 	}
 	
 }
