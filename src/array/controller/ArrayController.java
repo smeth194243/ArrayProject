@@ -53,7 +53,7 @@ public class ArrayController
 	{
 		for(Hipster currentHipster : hipsters)
 		{
-			currentHipster.calculateHipsterRank();
+			currentHipster.calculateHipsterRank(100);
 		}
 	}
 	
